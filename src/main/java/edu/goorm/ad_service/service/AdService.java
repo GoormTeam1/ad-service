@@ -45,6 +45,7 @@ public class AdService {
         ad.setImageUrl(dto.getImageUrl());
         ad.setLinkUrl(dto.getLinkUrl());
         ad.setDescription(dto.getDescription());
+        ad.setType(dto.getType());
         ad.setStatus(dto.getStatus());
         ad.setStartDate(LocalDateTime.parse(dto.getStartDate(), formatter));
         ad.setEndDate(LocalDateTime.parse(dto.getEndDate(), formatter));
@@ -64,6 +65,7 @@ public class AdService {
                 .imageUrl(ad.getImageUrl())
                 .linkUrl(ad.getLinkUrl())
                 .description(ad.getDescription())
+                .type(ad.getType())
                 .status(ad.getStatus())
                 .startDate(ad.getStartDate().format(formatter))
                 .endDate(ad.getEndDate().format(formatter))
@@ -79,6 +81,7 @@ public class AdService {
                 .imageUrl(dto.getImageUrl())
                 .linkUrl(dto.getLinkUrl())
                 .description(dto.getDescription())
+                .type(dto.getType())
                 .status(dto.getStatus())
                 .startDate(LocalDateTime.parse(dto.getStartDate(), formatter))
                 .endDate(LocalDateTime.parse(dto.getEndDate(), formatter))
