@@ -23,7 +23,7 @@
 
     <!-- ✅ AdController 전용 로그 파일 유지 -->
     <logger level="INFO"
-      name="edu.goorm.adservice.controller.AdController"
+      name="edu.goorm.ad_service.controller.AdController"
       additivity="false">
         <appender-ref ref="ADCONTROLLER"/>
     </logger>
