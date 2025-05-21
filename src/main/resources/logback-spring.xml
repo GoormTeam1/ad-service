@@ -6,10 +6,10 @@
 
     <!-- ✅ AdController 로그 파일 저장 (20분 단위처럼 보이게) -->
     <appender name="ADCONTROLLER" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>logs/ad-service/adController.log</file>
+        <file>../logs/service/ad-service/adController.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- ✅ 분 단위 롤링 → 20분 단위처럼 구분 가능 -->
-            <fileNamePattern>logs/ad-service/adController.%d{yyyy-MM-dd_HH-mm}.log</fileNamePattern>
+            <fileNamePattern>../logs/service/ad-service/adController.%d{yyyy-MM-dd_HH-mm}.log</fileNamePattern>
             <maxHistory>90</maxHistory>
         </rollingPolicy>
         <encoder>
