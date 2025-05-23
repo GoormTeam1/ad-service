@@ -1,4 +1,4 @@
-package edu.goorm.ad_service.entity;
+package edu.goorm.ad_service.domain.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

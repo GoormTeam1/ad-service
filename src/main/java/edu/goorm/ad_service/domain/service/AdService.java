@@ -1,8 +1,8 @@
-package edu.goorm.ad_service.service;
+package edu.goorm.ad_service.domain.service;
 
-import edu.goorm.ad_service.dto.AdDto;
-import edu.goorm.ad_service.entity.Ad;
-import edu.goorm.ad_service.repository.AdRepository;
+import edu.goorm.ad_service.domain.dto.AdDto;
+import edu.goorm.ad_service.domain.entity.Ad;
+import edu.goorm.ad_service.domain.repository.AdRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

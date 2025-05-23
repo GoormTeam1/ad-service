@@ -1,4 +1,4 @@
-package edu.goorm.ad_service.util;
+package edu.goorm.ad_service.global.util;
 
 import jakarta.servlet.http.HttpServletRequest;
 

@@ -1,7 +1,7 @@
-package edu.goorm.ad_service.repository;
+package edu.goorm.ad_service.domain.repository;
 
-import edu.goorm.ad_service.dto.AdDto;
-import edu.goorm.ad_service.entity.Ad;
+import edu.goorm.ad_service.domain.dto.AdDto;
+import edu.goorm.ad_service.domain.entity.Ad;
 
 import java.util.List;
 

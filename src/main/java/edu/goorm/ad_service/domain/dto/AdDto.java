@@ -1,4 +1,4 @@
-package edu.goorm.ad_service.dto;
+package edu.goorm.ad_service.domain.dto;
 
 import lombok.*;
 
