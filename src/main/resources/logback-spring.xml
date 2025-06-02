@@ -52,9 +52,11 @@
         <appender-ref ref="EXTERNAL_LOG"/>
     </logger>
 
-    <!-- ✅ 루트 로거는 콘솔만 유지 -->
+    <!-- ✅ 루트 로거에도 INFO_LOG와 ERROR_LOG 추가 -->
     <root level="INFO">
         <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="INFO_LOG"/>
+        <appender-ref ref="ERROR_LOG"/>
     </root>
 
 </configuration>
