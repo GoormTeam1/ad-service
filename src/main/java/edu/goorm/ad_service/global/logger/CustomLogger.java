@@ -14,9 +14,9 @@ import java.util.Map;
 
 public class CustomLogger {
 
-    private static final Logger infoLogger = LoggerFactory.getLogger("infoLogger");
-    private static final Logger errorLogger = LoggerFactory.getLogger("errorLogger");
-    private static final Logger externalLogger = LoggerFactory.getLogger("externalLogger");
+    private static final Logger infoLogger = LoggerFactory.getLogger(CustomLogger.class);
+    private static final Logger errorLogger = LoggerFactory.getLogger(CustomLogger.class);
+    private static final Logger externalLogger = LoggerFactory.getLogger(CustomLogger.class);
 
     private static final ObjectMapper mapper = new ObjectMapper();
 

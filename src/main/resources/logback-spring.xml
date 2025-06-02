@@ -40,21 +40,18 @@
     </appender>
 
     <!-- ✅ 각각의 로거에 Appender 연결 -->
-    <logger name="infoLogger" level="INFO" additivity="false">
+    <logger name="edu.goorm.ad_service" level="INFO" additivity="false">
         <appender-ref ref="INFO_LOG"/>
-    </logger>
-
-    <logger name="errorLogger" level="ERROR" additivity="false">
         <appender-ref ref="ERROR_LOG"/>
-    </logger>
-
-    <logger name="externalLogger" level="INFO" additivity="false">
         <appender-ref ref="EXTERNAL_LOG"/>
     </logger>
+
 
     <!-- ✅ 루트 로거에도 INFO_LOG와 ERROR_LOG 추가 -->
     <root level="INFO">
         <appender-ref ref="CONSOLE"/>
     </root>
+
+
 
 </configuration>
