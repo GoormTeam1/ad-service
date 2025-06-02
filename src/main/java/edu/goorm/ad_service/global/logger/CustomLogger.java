@@ -3,8 +3,9 @@ package edu.goorm.ad_service.global.logger;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.goorm.ad_service.global.util.CustomIpUtil;
 import jakarta.servlet.http.HttpServletRequest;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
 
 import java.time.LocalDateTime;
@@ -13,9 +14,9 @@ import java.util.Map;
 
 public class CustomLogger {
 
-    private static final Logger infoLogger = LogManager.getLogger("infoLogger");
-    private static final Logger errorLogger = LogManager.getLogger("errorLogger");
-    private static final Logger externalLogger = LogManager.getLogger("externalLogger");
+    private static final Logger infoLogger = LoggerFactory.getLogger("infoLogger");
+    private static final Logger errorLogger = LoggerFactory.getLogger("errorLogger");
+    private static final Logger externalLogger = LoggerFactory.getLogger("externalLogger");
 
     private static final ObjectMapper mapper = new ObjectMapper();
 
